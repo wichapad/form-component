@@ -1,0 +1,193 @@
+:root {
+  /* ### Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+
+  /* ### Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-component{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Red);
+}
+.form-component-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: url(/images/bg-intro-desktop.png);
+    display: flex;
+    align-items: center;
+    
+}
+.form-component-contianer{
+    margin: 7% 15%;
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* form header */
+.form-component-header{
+    color: white;
+    max-width: 50%;
+    padding: 3rem;
+}
+.form-component-header h1{
+    padding: 1rem;
+    max-width: 80%;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.form-component-header p{
+    padding-left: 1rem;
+    max-width: 80%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* form Section */
+
+.form-component-section{
+    width: 50%;
+}
+
+.form-component-price button{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 70%;
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 14px 40px;
+    cursor: pointer;
+
+}
+
+.form-component-forms{
+    background-color: white;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.form-component-forms form{
+    display: grid;
+}
+
+.form-component-input form input{
+    margin: 8px 0;
+    color: gray;
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.form-component-input form input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #777;
+}
+.form-control.error input{
+    border-color: var(--Red);
+}
+.form-control small{
+    color: var(--Red);
+    font-size: 10px;
+    position: relative;
+    bottom: 0;
+    float: right;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-component-button button{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+    width: 100%;
+    background-color: var(--Green);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+.form-component-button button:hover{
+    background-color: lightgreen;
+}
+
+.form-component-text{
+    font-size: 10px;
+    text-align: center;
+}
+.form-component-text b{
+    color: var(--Red);
+}
+
+/* media quries */
+@media (max-width: 1440px){
+    .form-component-contianer{
+        margin: 7% 12%; 
+    }
+}
+@media (max-width: 991px){
+    .form-component-header{
+        padding: 0rem;
+    }
+    .form-component-price button{
+        width: 100%;
+        font-size: 14px;
+    }
+    .form-component-forms{
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .form-component-contianer {
+        margin: 7% 5%;
+    }
+    .form-component-header h1{
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .form-component-wrapper{
+        background: url(/images/bg-intro-mobile.png);
+    }
+    
+}
+
